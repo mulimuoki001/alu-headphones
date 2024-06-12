@@ -1,1 +1,1 @@
-# alu-headphones
+This project is quite special. It will test my accumulated knowledge in HTML and CSS. Though i have guiding figma designs, the coding will be heavy and cumbersome. Nevertheless, the web page is responsive on all devices as instructed. The design is a replica or close to the Figma designs provided.
