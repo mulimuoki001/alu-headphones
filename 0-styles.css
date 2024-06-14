@@ -1,53 +1,346 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("~/fonts/SourceSansPro-Black.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-}
 
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  font-family: Source;
+}
 .header {
-  width: 1000.39px;
+  width: 1440px;
+  height: 800px;
+  margin-top: -28px;
+  background-image: url("images/headphones_hero_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Navigation {
+  width: 1300.39px;
   height: 32px;
-  top: 27.76px;
-  left: 200.61px;
+  margin-top: 27.76px;
+
   gap: 0px;
   opacity: 0px;
+
+  display: flex;
+  align-items: center;
 }
-.logo_part {
+.navbar {
+  margin-left: 630px;
+  width: 255px;
+
+  margin-top: 37px;
+  display: flex;
+
+  gap: 0px;
+  opacity: 0px;
+
+  justify-content: space-between;
+}
+
+.navbar .menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.navbar .menu li {
+  font-family: Source Sans Pro;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15.08px;
+  text-align: left;
+
+  color: rgba(255, 255, 255, 1);
+  margin: auto 10px;
+}
+.navbar .menu li a {
+  text-decoration: none;
+  color: white;
+}
+.navbar .menu li a:hover {
+  color: rgba(255, 101, 101, 1);
+}
+.logo {
   width: 161px;
   height: 32px;
-  top: 27.76px;
-  left: 200.61px;
+  width: 161px;
+
+  margin-top: 27.76px;
+  margin-left: 200.61px;
   gap: 0px;
   opacity: 0px;
-}
 
-.navbar {
-  width: 255px;
-  height: 15px;
-  top: 37px;
-  left: 946px;
   gap: 0px;
   opacity: 0px;
-}
-
-.main_part {
-  width: 1400px;
-  height: 800px;
-  border-width: 0px 0px 0px 0px;
-  border-style: solid;
-  border-color: rgba(151, 151, 151, 1);
-  background-image: url("images/headphones_hero_1.jpg");
 }
 
 .content {
   width: 637px;
-  height: 313px;
-  top: 372px;
-  left: 382px;
+  height: 376px;
+  margin-top: 342px;
+  margin-left: 362px;
   gap: 0px;
   opacity: 0px;
+}
+.content h1 {
+  font-family: "Source Sans Pro";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40.22px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  font-size: 32px;
+}
+
+.content p {
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.11px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+.logo1 {
+  display: none;
+}
+
+.content .text {
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 70px;
+  padding: 10px;
+}
+
+.btn-1 {
+  border: none;
+  outline: none;
+  width: 162px;
+  height: 44px;
+  margin-top: 100px;
+  margin-left: 257px;
+
+  background-color: rgba(255, 101, 101, 1);
+  border-radius: 40px;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
+  color: rgba(255, 255, 255, 1);
+}
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 768px;
+    background-position: center;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .Navigation {
+    width: 633px;
+    height: 32px;
+    margin-top: 29px;
+    margin-left: 66px;
+    gap: 0px;
+    opacity: 0px;
+
+    gap: 0px;
+    opacity: 0px;
+
+    display: flex;
+    align-items: center;
+  }
+  .navbar {
+    margin-left: 250px;
+    width: 255px;
+    height: 15px;
+
+    margin-top: 37px;
+    display: flex;
+
+    gap: 0px;
+    opacity: 0px;
+
+    justify-content: space-between;
+  }
+
+  .navbar .menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .header .logo {
+    height: 31.18px;
+    margin-top: 29px;
+    margin-left: 0px;
+  }
+
+  .content {
+    width: 637px;
+    height: 313px;
+    margin-top: 342px;
+    margin-left: 66px;
+  }
+  .content h1 {
+    width: 578px;
+
+    margin-left: 29px;
+  }
+
+  .content .text {
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 70px;
+    padding: 10px;
+  }
+
+  .btn-1 {
+    height: 44px;
+    margin-top: 35px;
+    margin-left: 247px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    width: 375px;
+    height: 869px;
+
+    background-size: cover;
+  }
+
+  .Navigation {
+    width: 161px;
+
+    margin-top: 29px;
+    margin-left: 107px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .logo {
+    display: none;
+  }
+  .logo1 {
+    display: flex;
+    width: 161px;
+    height: 32px;
+    margin-top: -20px;
+    margin-left: 130px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .menu-icon {
+    width: 20px;
+    height: 14px;
+
+    position: absolute;
+    margin-top: 58px;
+    margin-left: -60px;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 20px;
+
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  .menu-icon .line {
+    width: 20px;
+    height: 2px;
+    background: white;
+  }
+
+  .menu-icon .line .line2 {
+    width: 13px;
+  }
+  .menu-icon .line:nth-child(2) {
+    width: 50%;
+  }
+  .navbar {
+    display: none;
+  }
+  .menu-icon span:nth-child(3) {
+    width: 75%;
+  }
+
+  .content {
+    width: 357px;
+    height: 436px;
+    margin-top: 327px;
+    margin-left: 9px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .content h1 {
+    width: 357px;
+    font-size: 32px;
+    margin-left: 0px;
+  }
+  .content p {
+    width: 279px;
+    height: 40px;
+    margin-left: 39px;
+  }
+  .btn-1 {
+    margin-top: 15px;
+    margin-left: 97px;
+  }
+
+  .nav-bar {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 180px;
+  }
+  .nav-bar .menu-bar {
+    list-style-type: none;
+
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .na-vbar .menu-bar li {
+    font-family: "Source Sans Pro";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15.08px;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 1);
+  }
+  .nav-bar .menu-bar li a {
+    text-decoration: none;
+    color: white;
+  }
+  .nav-bar .menu-bar li a:hover {
+    color: rgba(255, 101, 101, 1);
+  }
+
+  .menu-close-icon {
+    width: 20px;
+    height: 14px;
+    font-size: 30px;
+
+    margin-top: 40px;
+    margin-left: -67px;
+    transform: translate(-50%, -50%);
+
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    color: white;
+  }
 }

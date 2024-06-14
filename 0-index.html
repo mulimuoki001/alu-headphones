@@ -10,30 +10,94 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo_part">
+    <header class="header" id="header">
+
+        <div class="Navigation">
+
+            <div class="menu-icon" id="menu-icon">
+                <div class="line"></div>
+                <div class="line line2"></div>
+                <div class="line"></div>
+            </div>
+            <div class="menu-close-icon " id="menu-close-icon">&times;</div>
             <img src="images/logo_headphones.png" class="logo">
 
-        </div>
-        <nav class="navbar">
 
-            <ul class="menu">
-                <li><a href="#">what we do</a></li>
+            <nav class="navbar">
+
+                <ul class="menu">
+                    <li class><a href="#">what we do</a></li>
+                    <li><a href="#">our results</a></li>
+                    <li><a href="#">contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <img src="images/logo_headphones.png" class="logo1">
+
+        <nav class="nav-bar">
+
+            <ul class="menu-bar" id="navmenu">
+                <li class><a href="#">what we do</a></li>
                 <li><a href="#">our results</a></li>
                 <li><a href="#">contact us</a></li>
             </ul>
         </nav>
 
+        <div class="content">
+            <h1>Lorem ipsum dolor set amet lorem ipsum </h1>
+            <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+
+            <button class="btn-1">CALL TO ACTION</button>
+
+            <div class="text">
+                <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aut ex nam aliquid
+                </P>
+                <p> iusto
+                    quaerat! Autem at amet, reprehenderit cum incidunt ratione aliquam facilis dolor</p>
+                <p> nam laboriosam beatae
+                    blanditiis aspernatur ut sit aut ipsum rem. Odio ad, aut deser</p>
+                <p> aperiam neque nihil sapiente natus
+                    optio et.</P>
+
+            </div>
+
+        </div>
+
 
     </header>
     <main class="main_part">
-        <div class="content">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-            <button class="btn">CALL TO ACTION</button>
-        </div>
     </main>
 </body>
+<script>
+    const menuIcon = document.getElementById('menu-icon');
+    const menuList = document.getElementById('navmenu');
+    const menuCloseIcon = document.getElementById('menu-close-icon');
+    const header = document.getElementById('header');
+
+    // Initially hide the menu list and show the menu bars icon
+    menuList.style.display = 'none';
+    menuIcon.style.display = 'flex';
+    menuCloseIcon.style.display = 'none';
+
+    menuIcon.addEventListener('click', () => {
+        // Toggle visibility of menu bars icon, menu list, and X icon
+        menuList.style.display = menuList.style.display === 'none' ? 'flex' : 'none';
+        menuIcon.style.display = 'none';
+        menuCloseIcon.style.display = menuCloseIcon.style.display === 'none' ? 'flex' : 'none';
+        header.style.backgroundPosition = calc("100% + 760px");
+        header.style.height = '1000px';
+
+    });
+
+    menuCloseIcon.addEventListener('click', () => {
+        // Hide the menu list, X icon, and show the menu bars icon
+        menuList.style.display = 'none';
+        menuIcon.style.display = 'flex';
+        menuCloseIcon.style.display = 'none';
+        header.style.backgroundPosition = calc("140% + 760px");
+        header.style.height = '869px';
+    });
+</script>
 
 </html>
