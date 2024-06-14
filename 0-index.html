@@ -85,9 +85,10 @@
         menuList.style.display = menuList.style.display === 'none' ? 'flex' : 'none';
         menuIcon.style.display = 'none';
         menuCloseIcon.style.display = menuCloseIcon.style.display === 'none' ? 'flex' : 'none';
-        header.style.backgroundPosition = calc("100% + 760px");
+        header.style.backgroundSize = '450%';
         header.style.height = '1000px';
-
+        menuList.classList.add('open');
+        header.style.backgroundColor = 'grey';
     });
 
     menuCloseIcon.addEventListener('click', () => {
@@ -95,8 +96,11 @@
         menuList.style.display = 'none';
         menuIcon.style.display = 'flex';
         menuCloseIcon.style.display = 'none';
-        header.style.backgroundPosition = calc("140% + 760px");
+        header.style.backgroundSize = 'cover';
         header.style.height = '869px';
+
+
+
     });
 </script>
 

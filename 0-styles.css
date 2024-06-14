@@ -20,6 +20,7 @@ body {
   background-image: url("images/headphones_hero_1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .Navigation {
   width: 1300.39px;
@@ -220,8 +221,8 @@ body {
   .header {
     width: 375px;
     height: 869px;
-
-    background-size: cover;
+    background-position: calc(100% + 760px) center;
+    transition: background-size 0.3s ease;
   }
 
   .Navigation {
@@ -273,6 +274,8 @@ body {
   }
   .navbar {
     display: none;
+    transition: transform 0.3s ease;
+}
   }
   .menu-icon span:nth-child(3) {
     width: 75%;
