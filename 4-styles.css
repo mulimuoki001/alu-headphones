@@ -42,6 +42,16 @@
 .holberton_school-icon-ic_hearing:before {
   content: "\e909";
 }
+.holberton_school-icon-ic_facebook:before {
+  content: "\e908";
+}
+.holberton_school-icon-ic_instagram:before {
+  content: "\e90a";
+}
+
+.holberton_school-icon-ic_twitter:before {
+  content: "\e90f";
+}
 
 * {
   margin: 0;
@@ -496,6 +506,39 @@ footer {
   opacity: 0px;
   background-color: rgba(7, 22, 41, 1);
 }
+
+footer .logo-footer {
+  width: 161px;
+  height: 32px;
+  margin-top: 91.76px;
+  margin-left: 199.61px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+footer p {
+  width: 98px;
+  height: 15px;
+  margin-top: 55px;
+  margin-left: 651px;
+  gap: 0px;
+  opacity: 0.35px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.08px;
+  opacity: 0.17;
+}
+
+footer .icons {
+  width: 130px;
+  height: 30px;
+  margin-top: -90px;
+  margin-left: 1070px;
+  gap: 0px;
+  opacity: 0px;
+  color: rgba(255, 255, 255, 1);
+}
 @media screen and (max-width: 768px) {
   .header {
     width: 768px;
@@ -640,6 +683,27 @@ footer {
 
   .form {
     margin-left: 218px;
+  }
+  .btn-2 {
+    margin-left: 100px;
+  }
+  footer {
+    width: 768px;
+    height: 249px;
+  }
+
+  footer .logo-footer {
+    width: 162px;
+    margin-top: 109px;
+    margin-left: 56px;
+  }
+
+  footer p {
+    margin-left: 335px;
+  }
+
+  footer .icons {
+    margin-left: 594px;
   }
 }
 
@@ -870,5 +934,33 @@ footer {
   .btn-2 {
     margin-top: 60px;
     margin-left: 100px;
+  }
+
+  footer {
+    width: 375px;
+    height: 249px;
+  }
+
+  footer .logo-footer {
+    width: 162px;
+    height: 32px;
+    margin-top: 48px;
+    margin-left: 107px;
+  }
+
+  footer p {
+    margin-top: 125px;
+    margin-left: 123px;
+    opacity: 0.17;
+  }
+
+  footer .icons {
+    width: 130px;
+    height: 30px;
+    margin-top: -100px;
+    margin-left: 120px;
+  }
+  footer span {
+    font-size: 40px;
   }
 }
